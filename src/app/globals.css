@@ -1,0 +1,18 @@
+@import "tailwindcss";
+@reference "tailwindcss";
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .glass {
+    background-color: rgb(255 255 255 / 0.1);
+    @apply backdrop-blur-xl border border-white/20;
+  }
+  .glass-hover {
+    @apply transition-all duration-300 hover:scale-105 hover:shadow-2xl;
+  }
+}
